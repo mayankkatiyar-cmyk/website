@@ -1,0 +1,292 @@
+
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #113a24;
+    background-color: #f8fafc;
+}
+
+/* Navigation bar */
+header {
+    background-color: #164f4a;
+    color: white;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #38bdf8;
+}
+
+/* Home hero section */
+.hero {
+    min-height: 420px;
+    padding: 70px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background:
+        linear-gradient(rgba(15, 35, 60, 0.72),rgba(15, 35, 60, 0.72)),
+        url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80")
+        center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #0284c7;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0369a1;
+}
+
+/* Home cards feature */
+.features {
+    padding: 55px 5%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    flex: 1;
+    padding: 28px 22px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #0369a1;
+    margin-bottom: 12px;
+}
+
+/* Inner page heading */
+.page-banner {
+    text-align: center;
+    background-color: #e0f2fe;
+    padding: 45px 20px;
+}
+
+.page-banner h1 {
+    font-size: 36px;
+    color: #16324f;
+}
+
+/* About page */
+.about-section {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.about-section img {
+    width: 48%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-section h2,
+.about-section h3 {
+    color: #16324f;
+    margin-bottom: 12px;
+}
+
+.about-section p {
+    margin-bottom: 15px;
+}
+
+/* Contact page */
+.contact-section {
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 0 25px;
+    display: flex;
+    gap: 45px;
+    align-items: flex-start;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+}
+
+.contact-info h2 {
+    color: #16324f;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #38bdf8;
+    border-color: #0284c7;
+}
+
+/* Footer */
+footer {
+    background-color: #16324f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+}
+
+/* Responsive design for tablets and phones */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .card-container,
+    .about-section,
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .card,
+    .about-section img,
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .about-section,
+    .contact-section {
+        margin-top: 30px;
+    }
+
+    .features h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 23px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .page-banner h1 {
+        font-size: 30px;
+    }
+
+    .features {
+        padding: 35px 18px;
+    }
+}
