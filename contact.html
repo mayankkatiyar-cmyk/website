@@ -1,0 +1,55 @@
+
+<html lang="en">
+<head>
+    <title>contact Website  * Contact *</title>
+    <link href="style.css"  rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">My first Website</h2>
+            <ul class="nav-links">
+                <li><a href="website.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you.</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Email: katiyarmayank32@gmail.com</p>
+                <p>Phone: +91 7080064598</p>
+                <p>Address: Kannauj, Uttar Pradesh, India</p>
+            </div>
+
+            <form class="contact-form" action="mailto:hello@example.com" method="post" enctype="text/plain">
+
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
